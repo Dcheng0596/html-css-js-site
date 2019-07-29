@@ -1,3 +1,10 @@
+$bgColor: #f8f8f8;
+
 body{
     font-family: Verdana;
+    color: invert($bgColor);
+    background: linear-gradient($bgColor, darken($bgColor, 10%)) no-repeat;
+    text-align: center;
+    height: 100%;
+
 }
