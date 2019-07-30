@@ -4,21 +4,23 @@
     display: flex;
     justify-content: center;
     list-style-type: none;
+    font-family: 'Quantico', sans-serif;
     margin: 0;
     padding: 0;
     
     li.items {
-        flex: 1 1 200px;
+        flex-basis: 200px;
         line-height: $navHeight;
         transition: background $transitionTime linear;
         &:hover {
-            background: darken($navColor, 17%);
+            background: darken($navColor, 10%);
             transition: background $transitionTime linear;
         }
     }
 
     a {
         text-decoration: none;
+        //font-weight: bold;
         color: inherit;
         display: block;
 

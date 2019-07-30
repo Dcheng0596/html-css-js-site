@@ -4,7 +4,7 @@
 
 
 body{
-    font-family: Verdana;
+    font-family: 'Ubuntu', sans-serif;
     color: invert($bgColor);
     text-align: center;
     margin: 0;
@@ -19,7 +19,12 @@ div.site-grid {
     header {
         grid-column: 1 / 3;
         grid-row: 1 / 2;
-
+        height: 40vh;
+        background: black;
+        img {
+            max-width:100%;
+            max-height:100%;
+        }
     }
     nav {
         grid-column: 1 / 3;
@@ -35,7 +40,7 @@ div.site-grid {
         z-index: -1;
         background-color: $sideColor;
         position: sticky;
-        top: 100px;
+        top: $navHeight;
         height: calc(100vh - #{$navHeight});
         align-self: start;  
     }
@@ -44,6 +49,11 @@ div.site-grid {
         grid-row: 3 / 4;
         height:3000px;
         background: linear-gradient($bgColor, darken($bgColor, 5%)) no-repeat;
+        p {
+            width: 800px;
+            margin: 100px auto;
+
+        }
 
     }
     footer {
