@@ -1,0 +1,55 @@
+@import "plate";
+
+$bgColor: #FFFFFF;
+$navColor: blue;
+$navHeight: 100px;
+
+body{
+    font-family: Verdana;
+    color: invert($bgColor);
+    text-align: center;
+    height: 100%;
+    margin: 0;
+}
+
+div.siteGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 250px auto;
+    grid-auto-rows: minmax($navHeight, auto);
+
+    header {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+
+    }
+    nav {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+        position: sticky;
+        top: 0;
+        background: $navColor;
+        box-shadow: 40px 40px 40px -40px lighten($navColor, 5%); 
+    }
+    aside {
+        grid-column: 1 / 2;
+        grid-row: 3 / 5;
+        z-index: -1;
+        background-color:red;
+        position: sticky;
+        top: 100px;
+        height: calc(100vh - #{$navHeight});
+        align-self: start;  
+    }
+    section {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        height:3000px;
+        background: linear-gradient($bgColor, darken($bgColor, 5%)) no-repeat;
+
+    }
+    footer {
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+    }
+}
