@@ -3,15 +3,24 @@
 #nav-items {
     display: flex;
     justify-content: center;
-    align-items: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
+    
+    li.items {
+        flex: 1 1 200px;
+        line-height: $navHeight;
+        transition: background $transitionTime linear;
+        &:hover {
+            background: darken($navColor, 17%);
+            transition: background $transitionTime linear;
+        }
+    }
 
-.items {
-    flex: 1 1 200px;
-    &:hover {
-        background: darken($navColor, 20%);
+    a {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+
     }
 }
