@@ -1,0 +1,17 @@
+@import "variables";
+
+#nav-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.items {
+    flex: 1 1 200px;
+    &:hover {
+        background: darken($navColor, 20%);
+    }
+}

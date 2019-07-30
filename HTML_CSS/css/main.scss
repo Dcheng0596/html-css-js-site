@@ -1,19 +1,17 @@
 @import "plate";
+@import "nav";
+@import "variables";
 
-$bgColor: #FFFFFF;
-$navColor: blue;
-$navHeight: 100px;
 
 body{
     font-family: Verdana;
     color: invert($bgColor);
     text-align: center;
-    height: 100%;
     margin: 0;
+    padding: 0;
 }
 
-div.siteGrid {
-    width: 100%;
+div.site-grid {
     display: grid;
     grid-template-columns: 250px auto;
     grid-auto-rows: minmax($navHeight, auto);
@@ -35,7 +33,7 @@ div.siteGrid {
         grid-column: 1 / 2;
         grid-row: 3 / 5;
         z-index: -1;
-        background-color:red;
+        background-color: $sideColor;
         position: sticky;
         top: 100px;
         height: calc(100vh - #{$navHeight});
