@@ -1,0 +1,25 @@
+@import "variables";
+
+section {
+    img {
+
+        display: inline-block;
+        margin-top: 75px;
+    }
+
+    h1 {
+        font-size: 48px;
+        margin-top: 50px;
+        letter-spacing: 0.2em;
+    }
+
+    p {
+        text-align: left;
+        font-size: $bodyFontSize;
+        text-indent: 30px;
+        margin: 10px auto;
+        max-width: 1000px;
+        line-height: 1em;
+
+    }
+}

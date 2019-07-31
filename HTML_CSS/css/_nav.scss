@@ -5,12 +5,18 @@
     justify-content: center;
     list-style-type: none;
     font-family: 'Quantico', sans-serif;
+    font-size: $navFontSize;
     margin: 0;
     padding: 0;
+    line-height: $navHeight;
     
+    #logo {
+        position: absolute;
+        left: $navHeight/2;
+    }
+
     li.items {
-        flex-basis: 200px;
-        line-height: $navHeight;
+        flex-basis: 180px;
         transition: background $transitionTime linear;
         &:hover {
             background: darken($navColor, 10%);
@@ -20,7 +26,6 @@
 
     a {
         text-decoration: none;
-        //font-weight: bold;
         color: inherit;
         display: block;
 
