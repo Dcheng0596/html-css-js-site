@@ -2,7 +2,7 @@
 
 #nav-items {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     list-style-type: none;
     font-family: 'Quantico', sans-serif;
     font-size: $navFontSize;
@@ -11,12 +11,11 @@
     line-height: $navHeight;
     
     #logo {
-        position: absolute;
-        left: $navHeight/2;
+        margin: 0px 200px 0px $navHeight/2;
     }
 
     li.items {
-        flex-basis: 180px;
+        flex-basis: 150px;
         transition: background $transitionTime linear;
         &:hover {
             background: darken($navColor, 10%);

@@ -247,9 +247,9 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   list-style-type: none;
   font-family: 'Quantico', sans-serif;
   font-size: 17px;
@@ -259,13 +259,12 @@ textarea {
 }
 
 #nav-items #logo {
-  position: absolute;
-  left: 35px;
+  margin: 0px 200px 0px 35px;
 }
 
 #nav-items li.items {
-  -ms-flex-preferred-size: 180px;
-      flex-basis: 180px;
+  -ms-flex-preferred-size: 150px;
+      flex-basis: 150px;
   -webkit-transition: background 0.2s linear;
   transition: background 0.2s linear;
 }
@@ -282,24 +281,43 @@ textarea {
   display: block;
 }
 
-section img {
-  display: inline-block;
-  margin-top: 75px;
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
 }
 
-section h1 {
-  font-size: 48px;
-  margin-top: 50px;
-  letter-spacing: 0.2em;
+section #intro {
+  height: calc(100vh - 70px - 250px);
+  min-height: 600px;
 }
 
-section p {
-  text-align: left;
-  font-size: 20px;
-  text-indent: 30px;
-  margin: 10px auto;
+section #intro #headShot {
+  min-width: 400px;
+  min-height: auto;
+}
+
+section #intro h1 {
+  font-family: "Quantico", sans-serif;
+  font-size: 60px;
+  letter-spacing: 0.1em;
+  position: relative;
+  margin: 0;
+  top: 20vh;
+}
+
+section #intro p {
+  font-size: 24px;
+  margin: 0 auto;
+  position: relative;
+  top: 110%;
   max-width: 1000px;
-  line-height: 1em;
+  line-height: 1.5em;
 }
 
 body {
@@ -313,8 +331,8 @@ body {
 div.site-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 250px auto;
-      grid-template-columns: 250px auto;
+  -ms-grid-columns: 200px auto;
+      grid-template-columns: 200px auto;
   grid-auto-rows: minmax(70px, auto);
 }
 
@@ -374,7 +392,6 @@ div.site-grid section {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3 / 4;
-  height: 3000px;
   background: -webkit-gradient(linear, left top, left bottom, from(white), to(#fafafa)) no-repeat;
   background: linear-gradient(white, #fafafa) no-repeat;
 }

@@ -1,25 +1,42 @@
 @import "variables";
 
 section {
-    img {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 
-        display: inline-block;
-        margin-top: 75px;
-    }
+    #intro {
+    
+        height: calc(100vh - #{$navHeight} - #{$headerHeight});
+        min-height: 600px;
 
-    h1 {
-        font-size: 48px;
-        margin-top: 50px;
-        letter-spacing: 0.2em;
-    }
+        #headShot {
+            min-width: 400px;
+            min-height: auto;
+        }
 
-    p {
-        text-align: left;
-        font-size: $bodyFontSize;
-        text-indent: 30px;
-        margin: 10px auto;
-        max-width: 1000px;
-        line-height: 1em;
+        #introInfo {
+        }
 
+        h1 {
+            font-family: "Quantico", sans-serif;
+            font-size: 60px;
+            letter-spacing: 0.1em;
+            position: relative;
+            margin: 0;
+            top: 20vh;
+
+        }
+    
+        p {       
+            font-size: $bodyFontSize;
+            
+            margin: 0 auto;
+            position: relative;
+            top: 110%;
+            max-width: 1000px;
+            line-height: 1.5em;
+    
+        }
     }
 }
