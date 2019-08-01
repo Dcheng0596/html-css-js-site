@@ -1,8 +1,7 @@
-$bgColor: rgb(255, 255, 255);
-$navColor: rgba(254, 221, 0, 0.9);
-$sideColor: rgb(44, 44, 44);
-$headerHeight: 250px;
-$navHeight: 70px;
-$navFontSize: 17px;
-$bodyFontSize: 24px;
+$green: rgb(22, 255, 8);
+$black: rgb(6, 12, 6);
+$headerHeight: 100vh;
+$navHeight: 50px;
+$navFontSize: $navHeight;
+$bodyFontSize: 40px;
 $transitionTime: .20s;

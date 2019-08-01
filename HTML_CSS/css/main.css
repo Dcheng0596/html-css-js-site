@@ -251,26 +251,25 @@ textarea {
       -ms-flex-pack: start;
           justify-content: flex-start;
   list-style-type: none;
-  font-family: 'Quantico', sans-serif;
-  font-size: 17px;
+  font-size: 50px;
   margin: 0;
   padding: 0;
-  line-height: 70px;
+  line-height: 50px;
 }
 
 #nav-items #logo {
-  margin: 0px 200px 0px 35px;
+  margin: 0px 200px 0px 50px;
 }
 
 #nav-items li.items {
-  -ms-flex-preferred-size: 150px;
-      flex-basis: 150px;
+  -ms-flex-preferred-size: 400px;
+      flex-basis: 400px;
   -webkit-transition: background 0.2s linear;
   transition: background 0.2s linear;
 }
 
 #nav-items li.items:hover {
-  background: rgba(203, 177, 0, 0.9);
+  background: #0cd400;
   -webkit-transition: background 0.2s linear;
   transition: background 0.2s linear;
 }
@@ -289,11 +288,10 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow: hidden;
 }
 
 section #intro {
-  height: calc(100vh - 70px - 250px);
+  height: calc(100vh - 50px - 100vh);
   min-height: 600px;
 }
 
@@ -303,7 +301,6 @@ section #intro #headShot {
 }
 
 section #intro h1 {
-  font-family: "Quantico", sans-serif;
   font-size: 60px;
   letter-spacing: 0.1em;
   position: relative;
@@ -311,8 +308,8 @@ section #intro h1 {
   top: 20vh;
 }
 
-section #intro p {
-  font-size: 24px;
+section #intro ul {
+  font-size: 40px;
   margin: 0 auto;
   position: relative;
   top: 110%;
@@ -321,11 +318,16 @@ section #intro p {
 }
 
 body {
-  font-family: 'Ubuntu', sans-serif;
-  color: black;
+  font-family: 'VT323', monospace;
+  background: #060c06;
+  color: #16ff08;
   text-align: center;
   margin: 0;
   padding: 0;
+  background-image: radial-gradient(#021c00, #060c06);
+  background-attachment: fixed;
+  text-shadow: 0 0 5px #16ff08;
+  height: 100vh;
 }
 
 div.site-grid {
@@ -333,7 +335,7 @@ div.site-grid {
   display: grid;
   -ms-grid-columns: 200px auto;
       grid-template-columns: 200px auto;
-  grid-auto-rows: minmax(70px, auto);
+  grid-auto-rows: minmax(50px, auto);
 }
 
 div.site-grid header {
@@ -343,13 +345,7 @@ div.site-grid header {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
-  height: 250px;
-  background: black;
-}
-
-div.site-grid header img {
-  max-width: 100%;
-  max-height: 100%;
+  height: 100vh;
 }
 
 div.site-grid nav {
@@ -362,9 +358,11 @@ div.site-grid nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background: rgba(254, 221, 0, 0.9);
-  -webkit-box-shadow: -20px 30px 30px -30px rgba(255, 225, 25, 0.9);
-          box-shadow: -20px 30px 30px -30px rgba(255, 225, 25, 0.9);
+  background: #16ff08;
+  color: #060c06;
+  -webkit-box-shadow: 0 0 15px #16ff08;
+          box-shadow: 0 0 15px #16ff08;
+  text-shadow: 0;
 }
 
 div.site-grid aside {
@@ -375,14 +373,16 @@ div.site-grid aside {
   -ms-grid-row-span: 2;
   grid-row: 3 / 5;
   z-index: -1;
-  background-color: #2c2c2c;
   position: -webkit-sticky;
   position: sticky;
-  top: 70px;
-  height: calc(100vh - 70px);
+  top: 50px;
+  height: calc(100vh - 50px);
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
+  border-right-style: solid;
+  -o-border-image: url(/img/border.png) 2 round;
+     border-image: url(/img/border.png) 2 round;
 }
 
 div.site-grid section {
@@ -392,8 +392,6 @@ div.site-grid section {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3 / 4;
-  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#fafafa)) no-repeat;
-  background: linear-gradient(white, #fafafa) no-repeat;
 }
 
 div.site-grid footer {
