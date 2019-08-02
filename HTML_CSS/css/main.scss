@@ -2,19 +2,19 @@
 @import "nav";
 @import "variables";
 @import "aboutSection";
-
+@import "crt";
 
 body{
     font-family: 'VT323', monospace;
     background: $black;
     color: $green;
     text-align: center;
-    margin: 0;
-    padding: 0;
     background-image: radial-gradient( darken($green, 46%), $black);
     background-attachment: fixed;
     text-shadow: 0 0 5px $green;
     height: 100vh;
+
+
 }
 
 div.site-grid {
@@ -35,8 +35,7 @@ div.site-grid {
         top: 0;
         background: $green;
         color: $black;
-        box-shadow: 0 0 15px $green;
-        text-shadow: 0,
+        box-shadow: 0 -1px 20px -2px $green;
     }
 
     aside {
@@ -47,8 +46,10 @@ div.site-grid {
         top: $navHeight;
         height: calc(100vh - #{$navHeight});
         align-self: start;  
-        border-right-style: solid;
-        border-image: url(/img/border.png) 2 round;
+       // border-right-style: solid;
+        //border-width: 10px;
+        //border-image: url(/img/border.png) 10 round;
+
     }
 
     section {
