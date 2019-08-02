@@ -518,7 +518,7 @@ textarea {
   content: " ";
   position: fixed;
   top: 0;
-  left: 300px;
+  left: 0;
   bottom: 0;
   right: 0;
   background: rgba(18, 16, 16, 0.1);
@@ -534,7 +534,7 @@ textarea {
   display: block;
   position: fixed;
   top: 0;
-  left: 300px;
+  left: 0;
   bottom: 0;
   right: 0;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(18, 16, 16, 0)), color-stop(50%, rgba(0, 0, 0, 0.25))), -webkit-gradient(linear, left top, right top, from(rgba(255, 0, 0, 0.06)), color-stop(rgba(0, 255, 0, 0.02)), to(rgba(0, 0, 255, 0.06)));
@@ -866,7 +866,7 @@ section #resume {
   content: " ";
   position: fixed;
   top: 0;
-  left: 300px;
+  left: 0;
   bottom: 0;
   right: 0;
   background: rgba(18, 16, 16, 0.1);
@@ -882,7 +882,7 @@ section #resume {
   display: block;
   position: fixed;
   top: 0;
-  left: 300px;
+  left: 0;
   bottom: 0;
   right: 0;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, rgba(18, 16, 16, 0)), color-stop(50%, rgba(0, 0, 0, 0.25))), -webkit-gradient(linear, left top, right top, from(rgba(255, 0, 0, 0.06)), color-stop(rgba(0, 255, 0, 0.02)), to(rgba(0, 0, 255, 0.06)));
@@ -963,15 +963,6 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-#controls {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  width: 300px;
-  height: 100%;
-  background: url(../img/beigePlastic.jpeg);
 }
 
 div.site-grid {
