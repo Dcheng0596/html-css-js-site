@@ -4,23 +4,34 @@
 @import "aboutSection";
 @import "crt";
 
-body{
-    font-family: 'VT323', monospace;
-    background: $black;
-    color: $green;
-    text-align: center;
-    background-image: radial-gradient( darken($green, 46%), $black);
-    background-attachment: fixed;
-    text-shadow: 0 0 5px $green;
-    height: 100vh;
 
-
+#moniter {
+    display: flex;
 }
 
+#controls {
+    position:sticky;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background: url(../img/beigePlastic.jpeg);  
+}
 div.site-grid {
+    font-family: 'VT323', monospace;
+    color: $green;
+    text-align: center;
+    background-image: radial-gradient( darken($green, 45%), $black);
+    background: $black;
+    background-attachment: fixed;
+    text-shadow: 0 0 5px $green;
+    ::selection {
+        background: $green;
+        color: $black;
+    }
     display: grid;
     grid-template-columns: 200px auto;
     grid-auto-rows: minmax($navHeight, auto);
+    
 
     header {
         grid-column: 1 / 3;
@@ -36,6 +47,10 @@ div.site-grid {
         background: $green;
         color: $black;
         box-shadow: 0 -1px 20px -2px $green;
+        ::selection {
+            background: $black;
+            color: $green;
+        }
     }
 
     aside {
@@ -46,9 +61,9 @@ div.site-grid {
         top: $navHeight;
         height: calc(100vh - #{$navHeight});
         align-self: start;  
-       // border-right-style: solid;
-        //border-width: 10px;
-        //border-image: url(/img/border.png) 10 round;
+        border-right-style: solid;
+        border-width: 30px;
+        border-image: url(/img/border.png) 21 round;
 
     }
 

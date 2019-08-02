@@ -1,31 +1,35 @@
 @import "variables";
+@import "mixins";
+@import "crt";
 
 #nav-items {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     list-style-type: none;
-    font-size: $navFontSize;
     margin: 0;
     padding: 0;
-    line-height: $navHeight;
     
     #logo {
         margin: 0px 200px 0px $navHeight;
     }
-
+    &::after{
+      content:"";  
+    }
+    &::before{
+        content:"";
+    }
     li.items {
-        flex-basis: 400px;
-        transition: background $transitionTime linear;
-        &:hover {
-            background: darken($green, 10%);
-            transition: background $transitionTime linear;
-        }
+        justify-items: start;
+        flex-basis: 300px;
+        font-size: $navFontSize;
     }
 
     a {
+        position: absolute;
+        top: -10px;
         text-decoration: none;
+        //dims nav icons to simulate glow
         color: transparentize($black, .3);
         display: block;
-
     }
 }

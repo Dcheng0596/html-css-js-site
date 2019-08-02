@@ -12,18 +12,16 @@ section {
 
         h1 {
             font-size: 60px;
+            padding: 20vh;;
             letter-spacing: 0.1em;
-            position: relative;
             margin: 0;
-            top: 20vh;
 
         }
     
         ul {       
             font-size: $bodyFontSize;
             
-            margin: 0 auto;
-            top: 40%;
+            margin: 0 auto; 
             max-width: 1000px;
             line-height: 1.5em;
     
