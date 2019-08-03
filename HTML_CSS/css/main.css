@@ -656,15 +656,12 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-#nav-items #logo {
-  margin: 0px 200px 0px 50px;
 }
 
 #nav-items::after {
@@ -701,14 +698,14 @@ section {
 }
 
 section #intro {
-  height: calc(100vh - 50px - 500px);
+  height: calc(100vh - 50px - 102vh);
   min-height: 600px;
 }
 
 section #intro h1 {
   font-size: 60px;
   padding: 20vh;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
   margin: 0;
 }
 
@@ -975,8 +972,8 @@ div.site-grid {
   text-shadow: 0 0 5px #33ff00;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 200px auto;
-      grid-template-columns: 200px auto;
+  -ms-grid-columns: 300px auto;
+      grid-template-columns: 300px auto;
   grid-auto-rows: minmax(50px, auto);
 }
 
@@ -997,7 +994,15 @@ div.site-grid header {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
-  height: 500px;
+  height: 102vh;
+}
+
+div.site-grid header pre {
+  letter-spacing: .1em;
+  margin: 0 auto;
+  padding: 25vh;
+  font-size: 20px;
+  line-height: 1.3em;
 }
 
 div.site-grid nav {
@@ -1042,7 +1047,7 @@ div.site-grid aside {
       -ms-grid-row-align: start;
       align-self: start;
   border-right-style: solid;
-  border-width: 30px;
+  border-width: 45px;
   -o-border-image: url(/img/border.png) 21 round;
      border-image: url(/img/border.png) 21 round;
 }
