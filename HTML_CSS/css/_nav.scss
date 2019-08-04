@@ -4,19 +4,12 @@
 
 #nav-items {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
     
-    &::after{
-      content:"";  
-    }
-    &::before{
-        content:"";
-    }
     li.items {
-        justify-items: start;
         flex-basis: 300px;
         font-size: $navFontSize;
     }
@@ -27,6 +20,5 @@
         text-decoration: none;
         //dims nav icons to simulate glow
         color: transparentize($black, .3);
-        display: block;
     }
 }

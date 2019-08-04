@@ -508,9 +508,7 @@ textarea {
 }
 
 .crt {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 1000px;
-          flex: 1 1 1000px;
+  margin: 0;
   background: #060c06;
 }
 
@@ -656,24 +654,15 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-#nav-items::after {
-  content: "";
-}
-
-#nav-items::before {
-  content: "";
-}
-
 #nav-items li.items {
-  justify-items: start;
   -ms-flex-preferred-size: 300px;
       flex-basis: 300px;
   font-size: 50px;
@@ -684,7 +673,6 @@ a:hover {
   top: -10px;
   text-decoration: none;
   color: rgba(6, 12, 6, 0.7);
-  display: block;
 }
 
 section {
@@ -712,7 +700,6 @@ section #intro h1 {
 section #intro ul {
   font-size: 40px;
   margin: 0 auto;
-  max-width: 1000px;
   line-height: 1.5em;
 }
 
@@ -853,9 +840,7 @@ section #resume {
 }
 
 .crt {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 1000px;
-          flex: 1 1 1000px;
+  margin: 0;
   background: #060c06;
 }
 
@@ -956,13 +941,13 @@ a:hover {
           animation-fill-mode: forwards;
 }
 
-#moniter {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 div.site-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 250px auto;
+      grid-template-columns: 250px auto;
+  grid-auto-rows: minmax(50px, auto);
+  width: 100%;
   font-family: 'VT323', monospace;
   color: #33ff00;
   text-align: center;
@@ -970,11 +955,6 @@ div.site-grid {
   background: #060c06;
   background-attachment: fixed;
   text-shadow: 0 0 5px #33ff00;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 300px auto;
-      grid-template-columns: 300px auto;
-  grid-auto-rows: minmax(50px, auto);
 }
 
 div.site-grid ::-moz-selection {
@@ -995,13 +975,17 @@ div.site-grid header {
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
   height: 102vh;
+  font-size: 20px;
+}
+
+div.site-grid header h1 {
+  text-align: justify;
 }
 
 div.site-grid header pre {
   letter-spacing: .1em;
   margin: 0 auto;
-  padding: 25vh;
-  font-size: 20px;
+  padding: 10vh;
   line-height: 1.3em;
 }
 
@@ -1047,7 +1031,7 @@ div.site-grid aside {
       -ms-grid-row-align: start;
       align-self: start;
   border-right-style: solid;
-  border-width: 45px;
+  border-width: 40px;
   -o-border-image: url(/img/border.png) 21 round;
      border-image: url(/img/border.png) 21 round;
 }
