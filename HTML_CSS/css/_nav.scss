@@ -2,13 +2,27 @@
 @import "mixins";
 @import "crt";
 
+nav {
+     grid-column: 1 / 3;
+     grid-row: 2 / 3;
+      position: sticky;
+      top: 0;
+      background: $green;
+      color: $black;
+       box-shadow: 0 0px 18px -2px $green;
+ }
+
+
 #nav-items {
     display: flex;
     justify-content: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    
+    ::selection {
+        background: $black;
+         color: $green;
+     }
     li.items {
         flex-basis: 300px;
         font-size: $navFontSize;
@@ -16,7 +30,7 @@
 
     a {
         position: absolute;
-        top: -10px;
+        top: -3px;
         text-decoration: none;
         //dims nav icons to simulate glow
         color: transparentize($black, .3);
