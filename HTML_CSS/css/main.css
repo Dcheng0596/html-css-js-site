@@ -505,6 +505,8 @@ aside li a {
 aside li a:hover {
   background: #33ff00;
   color: #060c06;
+  -webkit-box-shadow: 0 0px 18px -2px #33ff00;
+          box-shadow: 0 0px 18px -2px #33ff00;
 }
 
 section {
@@ -518,7 +520,7 @@ section {
 }
 
 section #intro {
-  height: calc(100vh - 50px - 102vh);
+  height: calc(100vh - 50px);
   min-height: 600px;
 }
 
@@ -533,10 +535,13 @@ section #intro ul {
   font-size: 40px;
   margin: 0 auto;
   line-height: 1.5em;
+  list-style-type: none;
 }
 
 section #resume {
-  height: 1000px;
+  font-size: 24px;
+  border-top: solid;
+  border-bottom: solid;
 }
 
 @keyframes flicker {
@@ -806,7 +811,7 @@ div.site-grid header {
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
   height: 102vh;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 div.site-grid header h1 {
