@@ -517,6 +517,8 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-size: 24px;
+  border-bottom: solid;
 }
 
 section #intro {
@@ -538,10 +540,9 @@ section #intro ul {
   list-style-type: none;
 }
 
-section #resume {
-  font-size: 24px;
-  border-top: solid;
-  border-bottom: solid;
+section ul {
+  line-height: 1.5em;
+  list-style-type: none;
 }
 
 @keyframes flicker {

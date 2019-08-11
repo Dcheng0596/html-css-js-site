@@ -28,9 +28,12 @@ section {
         }
     }
 
-    #resume {
-        font-size: $bodyFontSize;
-        border-top: solid;
-        border-bottom: solid;
+    font-size: $bodyFontSize;
+    border-bottom: solid;
+
+    ul {
+        line-height: 1.5em;
+        list-style-type: none;
     }
+
 }
