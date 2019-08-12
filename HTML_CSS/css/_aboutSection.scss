@@ -1,14 +1,11 @@
 @import "variables";
 
-section {
-    display: flex;
-    flex-direction: column;;
+#main-section {
 
     #intro {
     
         height: calc(100vh - #{$navHeight});
         min-height: 600px;
-
 
         h1 {
             font-size: 60px;
@@ -17,23 +14,32 @@ section {
             margin: 0;
 
         }
-    
-        ul {       
-            font-size: 40px;
-            
-            margin: 0 auto; 
-            line-height: 1.5em;
-            list-style-type: none;
-    
-        }
     }
 
     font-size: $bodyFontSize;
-    border-bottom: solid;
-
-    ul {
-        line-height: 1.5em;
+    
+    .resume {
+        width: 50em;
+        margin: 100px auto; 
+        line-height: 2em;
         list-style-type: none;
-    }
 
+        .date {
+            float: right;
+        }
+
+        h1 {
+        }
+
+        h3 {
+            text-align: left;
+        }
+        ul {
+            text-align: left;
+        }
+    }
+    
+    hr {
+        border: 2px solid$green;
+    } 
 }

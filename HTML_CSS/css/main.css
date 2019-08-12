@@ -509,40 +509,43 @@ aside li a:hover {
           box-shadow: 0 0px 18px -2px #33ff00;
 }
 
-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+#main-section {
   font-size: 24px;
-  border-bottom: solid;
 }
 
-section #intro {
+#main-section #intro {
   height: calc(100vh - 50px);
   min-height: 600px;
 }
 
-section #intro h1 {
+#main-section #intro h1 {
   font-size: 60px;
   padding: 20vh;
   letter-spacing: 0.2em;
   margin: 0;
 }
 
-section #intro ul {
-  font-size: 40px;
-  margin: 0 auto;
-  line-height: 1.5em;
+#main-section .resume {
+  width: 50em;
+  margin: 100px auto;
+  line-height: 2em;
   list-style-type: none;
 }
 
-section ul {
-  line-height: 1.5em;
-  list-style-type: none;
+#main-section .resume .date {
+  float: right;
+}
+
+#main-section .resume h3 {
+  text-align: left;
+}
+
+#main-section .resume ul {
+  text-align: left;
+}
+
+#main-section hr {
+  border: 2px solid #33ff00;
 }
 
 @keyframes flicker {
