@@ -510,12 +510,17 @@ aside li a:hover {
 }
 
 #main-section {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 #main-section #intro {
   height: calc(100vh - 50px);
   min-height: 600px;
+  font-size: 40px;
+}
+
+#main-section #intro ul {
+  list-style-type: none;
 }
 
 #main-section #intro h1 {
@@ -536,12 +541,20 @@ aside li a:hover {
   float: right;
 }
 
+#main-section .resume h1 {
+  margin: 100px;
+}
+
 #main-section .resume h3 {
   text-align: left;
 }
 
 #main-section .resume ul {
   text-align: left;
+}
+
+#main-section .bold {
+  font-weight: bold;
 }
 
 #main-section hr {
@@ -815,7 +828,7 @@ div.site-grid header {
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
   height: 102vh;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 div.site-grid header h1 {
@@ -825,7 +838,7 @@ div.site-grid header h1 {
 div.site-grid header pre {
   letter-spacing: .1em;
   margin: 0 auto;
-  padding: 10vh;
+  padding: 5vh;
   line-height: 1.3em;
 }
 

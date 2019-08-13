@@ -6,6 +6,10 @@
     
         height: calc(100vh - #{$navHeight});
         min-height: 600px;
+        font-size: 40px;
+        ul {
+            list-style-type: none
+        }
 
         h1 {
             font-size: 60px;
@@ -29,6 +33,8 @@
         }
 
         h1 {
+
+            margin: 100px;
         }
 
         h3 {
@@ -39,6 +45,10 @@
         }
     }
     
+    .bold {
+        font-weight: bold;
+    }
+
     hr {
         border: 2px solid$green;
     } 
