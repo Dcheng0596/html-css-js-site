@@ -12,7 +12,7 @@
  * circles but is also pleasurable in a visual sense because of the numerous circles
  * constantly changing in size and each one having an unique color.
  */
- 
+
 ArrayList<ClrEllipse> gArry; // List of ellipses that are growing
 ArrayList<ClrEllipse> sArry; // List of ellipses that are shrinking
 
@@ -34,44 +34,43 @@ float gFactorROC; // The rate at which the growth rate increases
 
 color bgClr;
 
-boolean gamestart;
 boolean gameover;
+boolean gamestart;
 
 void setup()
 {
-  
   size(720, 480);
   bgClr = color(255, 255, 255);
   background(bgClr);
-  
+
   ellipseMode(RADIUS);
   gameover = false;
-  gamestart = true;
-  
+	gamestart = true;
+
   gArry = new ArrayList<ClrEllipse>();
   sArry = new ArrayList<ClrEllipse>();
-  
+
   radLimit = 20;
-  
+
   spawnRate = 1000;
   maxSpawnRate = 550;
   spawnROC = 8;
-  
+
   gFactor = .1; 
   maxGFactor = .2;
   gFactorROC =.002;
-  
+
   oldTime = 0;
   deltaTime = spawnRate;
-  
+
   score = 0;
 }
 
 void draw()
 {
-  if(gamestart)
+ if(gamestart)
      startScreen();
-  else {
+ else {
     spawner();
  
     background(bgClr);
@@ -89,7 +88,7 @@ void mousePressed()
 {
   if(gameover)
     return;
-    
+
   for(int i = gArry.size() - 1; i >= 0; i--)
   {
     ClrEllipse e = gArry.get(i);
@@ -99,7 +98,7 @@ void mousePressed()
       score +=1;
     }
   }
-  
+
   for(int i = sArry.size() - 1; i >= 0; i--)
   {
     ClrEllipse e = sArry.get(i);
@@ -110,7 +109,6 @@ void mousePressed()
     }
   }
 }
-
 void startScreen()
 {
   fill(0, 0 ,0);
@@ -132,27 +130,28 @@ void gameOverScreen()
 {
   maxSpawnRate = 10;
   radLimit = random(30, 300);
-  
+
   fill(255, 0 ,0);
   textSize(70);
   textAlign(CENTER, CENTER);
   text("Game Over", width/2, height/4);
-  
+
   fill(0, 0 ,0);
   textSize(50);
   text("Score <" + score + ">" , width/2, height/2.7);
- 
+
   ClrEllipse e = new ClrEllipse(color(0, 255, 0), 360, 302, 60);
   e.draw();
-     
+
   fill(0, 0 ,0);
   textSize(30);
   text("RETRY", width/2, height/1.61);
-     
+
   // Checks if the retry button was pressed
   if(mousePressed && dist(mouseX, mouseY, e.p.x, e.p.y) <= e.radius) 
        setup();
-  gamestart = false;
+	gamestart = false;
+
 }
 
 // Adds ellipses to the growing array with radius 1 according to the spawn rate
@@ -162,7 +161,7 @@ void spawner()
 {
   newTime = millis();             // Set up the spawn rate
   deltaTime = newTime - oldTime;
-  
+
   if(deltaTime >= spawnRate)       
   {
     gArry.add(createEllipse(1));
@@ -181,9 +180,9 @@ ClrEllipse createEllipse(float rad)
   float radius = rad;
   float x = random(radLimit, width - radLimit);
   float y = random(radLimit, height - radLimit);
-  
+
   ClrEllipse e = new ClrEllipse(clr, x, y, radius);
-  
+
   return e;
 }
 
@@ -229,7 +228,7 @@ class Point
 {
   float x;
   float y;
-  
+
   Point(float x0, float y0)
   {
     x = x0;
@@ -243,19 +242,19 @@ class ClrEllipse
   color clr;
   Point p;
   float radius;
-  
+
   ClrEllipse(color clrx, float px, float py, float rad)
   {
     clr = clrx;
     p = new Point(px, py);
     radius = rad;
   }
-  
+
   void grow(float amount)
   {
     radius += amount;
   }
-  
+
   void shrink(float amount)
   {
     if(radius - amount >= 0)
@@ -263,7 +262,7 @@ class ClrEllipse
     else
       radius = 0;
   }
-  
+
   void draw()
   {
     fill(clr);

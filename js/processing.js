@@ -1755,6 +1755,7 @@ module.exports = function(options,undef) {
 
     var w = canvas.width,
         h = canvas.height,
+        
         baseline = h/2;
 
     // Set all canvas pixeldata values to 255, with all the content
