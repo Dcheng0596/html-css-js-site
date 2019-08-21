@@ -8,10 +8,10 @@ const getJoke = async () => {
     return data;
 };
 
-const display = document.getElementById('chuck');
+const display = document.getElementById('joke');
 
 
 getJoke().then(data => {display.innerHTML = data.value.joke})
-.catch(display.innerText = "Error retrieving joke");
+.catch(display.innerText += "Error retrieving joke");
 
 

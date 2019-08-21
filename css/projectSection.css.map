@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "projectSection.scss",
+        "_variables.scss"
+    ],
+    "names": [],
+    "file": "projectSection.css"
+}

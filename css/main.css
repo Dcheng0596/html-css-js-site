@@ -302,6 +302,11 @@ a:hover {
           animation: textShadow 1.6s infinite;
 }
 
+button:hover {
+  -webkit-animation: textShadow 1.6s infinite;
+          animation: textShadow 1.6s infinite;
+}
+
 @-webkit-keyframes turn-on {
   0% {
     -webkit-transform: scale(1, 1) translate3d(0, 0, 0);
@@ -733,6 +738,11 @@ a:hover {
           animation: textShadow 1.6s infinite;
 }
 
+button:hover {
+  -webkit-animation: textShadow 1.6s infinite;
+          animation: textShadow 1.6s infinite;
+}
+
 @keyframes turn-on {
   0% {
     -webkit-transform: scale(1, 1) translate3d(0, 0, 0);
@@ -793,6 +803,23 @@ a:hover {
           animation: turn-on 4s linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: #33ff00;
+  padding: 0 0.5em;
+  font: 16px;
+}
+
+button:active {
+  background-color: #33ff00;
+  color: #060c06;
+}
+
+button:focus {
+  outline: 0;
 }
 
 div.site-grid {
