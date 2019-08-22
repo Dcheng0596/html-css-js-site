@@ -10,8 +10,11 @@ const getJoke = async () => {
 
 const display = document.getElementById('joke');
 
+const generate = document.getElementById('generate');
 
-getJoke().then(data => {display.innerHTML = data.value.joke})
-.catch(display.innerText += "Error retrieving joke");
+generate.addEventListener("click", () => {
+    getJoke().then(data => {display.innerHTML = data.value.joke})
+});
+
 
 

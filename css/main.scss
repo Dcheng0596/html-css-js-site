@@ -17,7 +17,7 @@ div.site-grid {
     text-align: center;
     background-image: radial-gradient(scale-color($green,  $lightness: -90%), $black);
     background-attachment: fixed;
-    text-shadow: 0 0 5px $green;
+    text-shadow: $textShadow;
     ::selection {
         background: $green;
         color: $black;

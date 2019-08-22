@@ -809,6 +809,7 @@ button {
   background-color: rgba(0, 0, 0, 0);
   border: none;
   color: #33ff00;
+  text-shadow: 0 0 5px #33ff00;
   padding: 0 0.5em;
   font: 16px;
 }
