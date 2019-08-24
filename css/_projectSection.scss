@@ -1,12 +1,19 @@
 @import "variables";
 
+#joke {
+    margin: 0 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+}
 button {
     background-color: rgba($color: #000000, $alpha: 0);
     border: none;
     color: $green;
     text-shadow: $textShadow; 
     padding: 0 0.5em;
-    font: 16px;
+    margin: 50px;
+    font-size: 30px;
 
     &:active {
         background-color: $green;;
@@ -17,5 +24,9 @@ button {
         outline: 0;
     }
 
+}
+
+h1 {
+    margin: 100px 0 50px;
 }
 
