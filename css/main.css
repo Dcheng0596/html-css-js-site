@@ -403,7 +403,7 @@ button:hover {
           animation-fill-mode: forwards;
 }
 
-.site-grid {
+#turn-on {
   -webkit-animation: turn-on 4s linear;
           animation: turn-on 4s linear;
   -webkit-animation-fill-mode: forwards;
@@ -490,7 +490,7 @@ aside #side-items {
       -ms-flex-direction: column;
           flex-direction: column;
   list-style-type: none;
-  font-size: 50px;
+  font-size: 30px;
   margin: 21px auto;
   padding: 0;
 }
@@ -798,7 +798,7 @@ button:hover {
           animation-fill-mode: forwards;
 }
 
-.site-grid {
+#turn-on {
   -webkit-animation: turn-on 4s linear;
           animation: turn-on 4s linear;
   -webkit-animation-fill-mode: forwards;

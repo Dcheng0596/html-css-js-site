@@ -21,9 +21,9 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
+<body onload="turnOn()">
   <div class=crt>
-    <div class="site-grid">
+    <div class="site-grid" id="turn-on">
       <header>
         <h1>Welcome to http://wwww.dariencheng.com Ver. 0.1.0</h1>
         <pre>
@@ -121,6 +121,17 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    function turnOn() {
+      if(sessionStorage.getItem("on") === "false")
+      {
+         const grid = document.getElementById("turn-on");
+         grid.removeAttribute("id");
+      }
+
+      sessionStorage.setItem("on", "false");
+    };
+  </script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
