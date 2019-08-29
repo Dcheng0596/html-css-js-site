@@ -805,6 +805,10 @@ button:hover {
           animation-fill-mode: forwards;
 }
 
+.project {
+  height: 100vh;
+}
+
 #joke {
   margin: 0 50px;
   height: 50px;
