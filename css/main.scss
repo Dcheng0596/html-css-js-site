@@ -53,4 +53,12 @@ div.site-grid {
         grid-column: 2 / 3;
         grid-row: 4 / 5;
     }
+
+    .link::before {
+        display: block;
+        content: " ";
+        height: $navHeight;
+        margin-top: -$navHeight;
+        visibility: hidden;
+    }
 }

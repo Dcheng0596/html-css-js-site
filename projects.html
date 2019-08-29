@@ -57,7 +57,7 @@
         <a id="page-start"></a>
         <!--<a id=logo href="" ><img src="img/logo.png" alt="Darien Cheng" height="50" title="Darien Cheng"/></a> -->
         <ul id=nav-items>
-          <li class=items><a href="index.html#page-start" >ABOUT ME</a></li>
+          <li class=items><a href="index.html#page-start">ABOUT ME</a></li>
           <li class=items><a href="" >PORTFOLIO</a></li>
           <li class=items><a href="projects.html#page-start" >PROJECTS</a></li>
           <li class=items><a href="" >CONTACT</a></li>
@@ -65,38 +65,43 @@
       </nav>
       <aside>
         <ul id=side-items>
-          <li class=items><a href="" >Target Practice</a></li>
-          <li class=items><a href="" >The Duel</a></li>
-          <li class=items><a href="" >Chuck Norris</a></li>
-          <li class=items><a href="" >Item 1</a></li>
+          <li class=items><a href="#target-practice" >Target Practice</a></li>
+          <li class=items><a href="#the-duel" >The Duel</a></li>
+          <li class=items><a href="#chuck-norris" >Chuck Norris</a></li>
         </ul>
       </aside>
       <section id="main-section">  
-        <h1>Target Practice</h1>
-        <p>Click the circles before they disapear!<br>
-          A proccessing sketch to test your mouse accuracy and precision.
-        </p>
-        <div id="processing">
-            <canvas width="720" data-processing-sources="targetPractice.pde"></canvas> 
+        <div id="target-practice" class="link">
+          <h1>Target Practice</h1>
+          <p>Click the circles before they disapear!<br>
+            A proccessing sketch to test your mouse accuracy and precision.
+          </p>
+          <div id="processing">
+              <canvas width="720" data-processing-sources="targetPractice.pde"></canvas> 
+          </div>
         </div>
-        <hr>
-        <h1>The Duel</h1>
-        <p>Face off in a 1vs1 duel to the death.<br>
-          A multiplayer Unity game written in C#, play with a friend online!
-        </p>
-        <div id="unity">
-            <video width="720" autoplay muted loop>
-                <source src="vid/Unity.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-              </video> 
+          <hr>
+          <div id="the-duel" class="link">
+          <h1>The Duel</h1>
+          <p>Face off in a 1vs1 duel to the death.<br>
+            A multiplayer Unity game written in C#, play with a friend online!
+          </p>
+          <div id="unity">
+              <video width="720" autoplay muted loop>
+                  <source src="vid/Unity.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video> 
+          </div>
+          <footer>Download: <a href="exe/TheDuelSetup.exe" download>Windows version</a></footer>
         </div>
-        <footer>Download: <a href="exe/TheDuelSetup.exe" download>Windows version</a></footer>
-        <hr>
-        <div id=chuck>
-          <h1>Chuck Norris Joke Generator</h1>
-          <p id=joke> </p>
-          <button id="generate">Generate!</button>
-        </div>
+        <div id="chuck-norris" class="link">
+          <hr>
+          <div id=chuck>
+            <h1>Chuck Norris Joke Generator</h1>
+            <p id=joke> </p>
+            <button id="generate">Generate!</button>
+          </div>
+      </div>
         <hr>
       </section>
       <footer>Footer</footer>
