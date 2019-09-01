@@ -4,12 +4,13 @@
 @import "aboutSection";
 @import "crt";
 @import "projectSection";
+@import "contactSection";
 
 
 div.site-grid {
     display: grid;
     grid-template-columns: 250px auto;
-    grid-auto-rows: minmax($navHeight, auto);
+    grid-auto-rows: auto $navHeight auto $footerHeight;
     width: 100%;
 
     font-family: 'VT323', monospace;
@@ -52,6 +53,9 @@ div.site-grid {
     footer {
         grid-column: 2 / 3;
         grid-row: 4 / 5;
+        height: $footerHeight;
+        line-height: $footerHeight;;
+        border-top: 4px solid $green;
     }
 
     .link::before {
@@ -61,4 +65,5 @@ div.site-grid {
         margin-top: -$navHeight;
         visibility: hidden;
     }
+
 }
