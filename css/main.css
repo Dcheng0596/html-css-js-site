@@ -920,4 +920,8 @@ div.site-grid .link::before {
   margin-top: -50px;
   visibility: hidden;
 }
+
+div.site-grid hr {
+  border: 2px solid #33ff00;
+}
 /*# sourceMappingURL=main.css.map */
