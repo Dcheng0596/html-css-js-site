@@ -264,7 +264,6 @@
 
 .crt {
   margin: 0;
-  background: #060c06;
 }
 
 .crt::after {
@@ -430,9 +429,9 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -449,8 +448,6 @@ nav {
 }
 
 #nav-items li.items {
-  -ms-flex-preferred-size: 300px;
-      flex-basis: 300px;
   font-size: 50px;
 }
 
@@ -560,10 +557,6 @@ aside li a:hover {
 
 #main-section .bold {
   font-weight: bold;
-}
-
-#main-section hr {
-  border: 2px solid #33ff00;
 }
 
 @keyframes flicker {
@@ -700,7 +693,6 @@ aside li a:hover {
 
 .crt {
   margin: 0;
-  background: #060c06;
 }
 
 .crt::after {
@@ -855,18 +847,21 @@ h1 {
   margin: auto 0;
 }
 
+body {
+  background-image: radial-gradient(#051a00, #060c06);
+  background-attachment: fixed;
+  width: 100%;
+}
+
 div.site-grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 250px auto;
       grid-template-columns: 250px auto;
   grid-auto-rows: auto 50px auto 100px;
-  width: 100%;
   font-family: 'VT323', monospace;
   color: #33ff00;
   text-align: center;
-  background-image: radial-gradient(#051a00, #060c06);
-  background-attachment: fixed;
   text-shadow: 0 0 5px #33ff00;
 }
 
@@ -891,14 +886,9 @@ div.site-grid header {
   font-size: 20px;
 }
 
-div.site-grid header h1 {
-  text-align: justify;
-}
-
 div.site-grid header pre {
   letter-spacing: .1em;
   margin: 0 auto;
-  padding: 5vh;
   line-height: 1.3em;
 }
 

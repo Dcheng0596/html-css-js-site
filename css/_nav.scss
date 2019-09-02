@@ -15,7 +15,7 @@ nav {
 
 #nav-items {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -24,7 +24,6 @@ nav {
          color: $green;
      }
     li.items {
-        flex-basis: 300px;
         font-size: $navFontSize;
     }
 
